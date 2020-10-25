@@ -16,8 +16,8 @@ def open_site():
     driver = webdriver.Chrome(executable_path='C:/Users/sectr/OneDrive/Desktop/PythonProjects/chromedriver_win32/chromedriver.exe',options=options)
     driver.get(r'https://www.amazon.com/ap/signin?accountStatusPolicy=P1&clientContext=261-1149697-3210253&language=en_US&openid.assoc_handle=amzn_prime_video_desktop_us&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_encoding%3DUTF8%26location%3D%252Fref%253Ddv_auth_ret')
     sleep(5)
-    driver.find_element_by_id('ap_email').send_keys('preethanair239@gmail.com')
-    driver.find_element_by_id('ap_password').send_keys('Ashish1222',Keys.ENTER)
+    driver.find_element_by_id('ap_email').send_keys('')
+    driver.find_element_by_id('ap_password').send_keys('',Keys.ENTER)
     sleep(2)
     search(driver)    
 def search(driver):
